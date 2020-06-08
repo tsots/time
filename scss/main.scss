@@ -1,1 +1,17 @@
 @import './base/base';
+@import './mixins/mixins';
+
+.person {
+  color: red;
+
+  h1,
+  h3,
+  h5 {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  &:nth-of-type(odd) {
+    color: purple;
+  }
+}
