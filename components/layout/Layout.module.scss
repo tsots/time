@@ -1,0 +1,44 @@
+// .heading {
+//   color: lightseagreen;
+//   text-decoration: underline;
+//   margin-bottom: 3rem;
+// }
+
+@import '../../scss/mixins/mixins';
+.container {
+  background-color: lightskyblue;
+  @include size(md) {
+    background-color: purple;
+  }
+  height: 4.5rem;
+  line-height: 4.5rem;
+}
+
+.navigation {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  align-items: center;
+
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+
+    li {
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1.5rem 1rem;
+        height: 100%;
+        font-size: 1.4rem;
+        letter-spacing: 0.05rem;
+        font-weight: 500;
+        @include size(md) {
+          color: white;
+        }
+      }
+    }
+  }
+}
